@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-box text-center">
+  <h3 class="mb-4 text-light">ATM MU</h3>
+
+  <!-- Login -->
+  <div id="loginSection">
+    <input type="password" id="pinInput" class="form-control mb-3" placeholder="Masukkan PIN">
+    <button class="btn btn-primary w-100" onclick="login()">Masuk</button>
+  </div>
+
+  <!-- Menu -->
+  <div id="menuSection" style="display: none;">
+    <p class="text-light"><strong>Saldo:</strong> Rp <span id="saldo">0</span></p>
+    <button class="btn btn-info w-100 mb-2 text-light" onclick="showSection('setorSection')">Setor Uang</button>
+    <button class="btn btn-info w-100 mb-2 text-light" onclick="showSection('tarikSection')">Tarik Uang</button>
+    <button class="btn btn-danger w-100" onclick="logout()">Keluar</button>
+  </div>
+
+  <!-- Setor -->
+  <div id="setorSection" style="display: none;">
+    <h5>Setor Uang</h5>
+    <input type="number" id="setorInput" class="form-control mb-3" placeholder="Jumlah setor">
+    <button class="btn btn-success w-100 mb-2" onclick="setorUang()">Setor</button>
+    <button class="btn btn-secondary w-100" onclick="showSection('menuSection')">Kembali</button>
+  </div>
+
+  <!-- Tarik -->
+  <div id="tarikSection" style="display: none;">
+    <h5>Tarik Uang</h5>
+    <input type="number" id="tarikInput" class="form-control mb-3" placeholder="Jumlah tarik">
+    <button class="btn btn-warning w-100 mb-2" onclick="tarikUang()">Tarik</button>
+    <button class="btn btn-secondary w-100" onclick="showSection('menuSection')">Kembali</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
