@@ -1,0 +1,53 @@
+body {
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: black 2px 2px 5px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+
+}
+
+button{
+   margin-top: 50px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: none;
+
+}
+#submitBtn {
+   color: white;
+   background-color: green;
+   margin-right: 10px;
+   box-shadow: 2px 2px 5px
+   black;
+}
+
+#tebakanInput {
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: blue;
+}
+#restartBtn {
+    background-color: rgb(86, 214, 86);
+    box-shadow: 2px 2px 5px black;
+    color: white;
+
+}
+.highscore {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}

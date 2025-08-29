@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game Tebak Angka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Link ke file CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tebak Angka (1-100)</h1>
+    <p>Waktu: <span id="timer">30</span>s</p>
+    <p>Nyawa: <span id="nyawa">5</span></p>
+
+    <input type="number" id="tebakanInput" placeholder="Masukkan angka" min="1" max="100">
+    <br>
+    <button id="submitBtn">Masukan</button>
+    <button id="restartBtn">Main Lagi</button>
+
+    <p id="hasil"></p>
+
+    <div class="highscore">
+      <h3>High Score</h3>
+      <p id="highscore">-</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <!-- Link ke file JavaScript eksternal -->
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
